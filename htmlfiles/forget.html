@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="styleforget.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-header">
+                <span>Login</span>
+            </div>
+            <form id="loginForm" onsubmit="return login()">
+                <!-- Existing login form fields -->
+
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#" onclick="openForgotPasswordModal()">Forgot password</a>
+                    </div>
+                </div>
+
+                <!-- Existing login form submit button and register link -->
+            </form>
+        </div>
+    </div>
+
+    <!-- Forget Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+            <h2>Forgot Password</h2>
+            <p>Enter your email address to receive a password reset link:</p>
+            <input type="email" id="resetEmail" placeholder="Enter your email" required>
+            <button onclick="sendPasswordResetEmail()">Send Reset Link</button>
+        </div>
+    </div>
+
+    <script src="forget.js"></script>
+</body>
+</html>

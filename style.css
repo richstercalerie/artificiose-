@@ -1,0 +1,454 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+
+  /* Additional styles for mobile menu */
+  transition: background-color 0.3s ease;
+}
+
+
+/* Header Styles */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(45deg, #e0dbdb, #9ca89c); */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-links li {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.menu-links a {
+  text-decoration:none;
+  /* color: #333; */
+}
+.menu-links li:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-flexbox;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  /* color: #fffbfb; */
+  padding: 10px;
+  text-decoration: none;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.service {
+  /* Your existing styles for the services */
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+}
+
+.service:hover {
+  transform: scale(0.8); /* Zoom in on hover */
+}
+.join-btn a:hover {
+  background-color: #4CAF50; /* Change the background color on hover */
+}
+.join-btn a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* .language-item {
+  position: relative;
+}
+
+.language-item .material-symbols-outlined::before {
+  margin-right: 5px;
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-size: 20px;
+} */
+/* Dark mode toggle button */
+#dark-mode-toggle-btn {
+  background-color: #4caf50; /* Green color */
+  color: #ffffff; /* White text color */
+  /* border: none;
+  padding: 10px;
+  cursor: pointer; */
+}
+
+#dark-mode-toggle-btn:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #ffffff; /* Dark text color */
+  /* Add other dark mode styles */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/desktop2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  
+}
+.search-form button:hover{
+  background:#4CAF50;
+  
+}
+.search-form .material-symbols-outlined {
+  transition: transform 0.3s ease; 
+}
+.search-form .material-symbols-outlined:hover {
+  transition: scale(1.4);
+}
+/* Popular Tags Styles */
+.popular-tags {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center; /* Center-align the text */
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center; /* Center-align the tags */
+}
+
+.tags li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.tags li a:hover {
+  background-color: #4CAF50; /* Change background color on hover */
+}
+/* Existing styles */
+
+/* Product Showcase Styles */
+.product-showcase {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  overflow: hidden; /* Ensure the overflow is hidden for the animation */
+  position: relative; /* Position relative for absolute positioning of animation */
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 10%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product:hover img {
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(228, 220, 220, 0.5);
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover .product-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.product-overlay h3 {
+  margin-bottom: 10px;
+}
+
+/* Background Animation */
+.product-showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #2196F3, #FF9800);
+  background-size: 300% 100%;
+  animation: swipeAnimation 5s linear infinite; /* Adjust the animation duration */
+}
+
+@keyframes swipeAnimation {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+/* Your existing styles */
+
+/* Your existing styles */
+
+/* Product Slider Styles */
+.product-slider {
+  position: relative;
+  width: 80%; /* Adjust as needed */
+  margin: bottom;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  background-size: cover;
+  position:fixed;
+  aspect-ratio: (1/1);
+}
+
+
+.product-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Your existing styles */
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  row-gap: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social span {
+  margin-right: 10px;
+}
+
+.social-icon img {
+  height: 20px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+/* Chat Icon Styles */
+.chat-icon {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  cursor: pointer;
+}
+.chat-icon img {
+  filter: invert(1); /* Invert the color (white inverts to black) */
+  transition: transform 0.2s ease;
+}
+.chat-icon img:hover {
+  transform:scale(1.1);
+}
+/* Chat Window Styles */
+.chat-window {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color:#2196F3;
+}
+
+.chat-header {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat-content {
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color:rgb(230, 212, 212);
+}
+
+.close-chat {
+  cursor: pointer;
+  float: right;
+  align-items: right;
+  transition: transform 0.3s ease;
+}
+
+.close-chat:hover {
+  color: rgb(237, 9, 9);
+  transform:scale(1.3);
+}
+
+
+.productParent{
+  background:linear-gradient(to right, #87CEEB,#4caf50);;
+}
